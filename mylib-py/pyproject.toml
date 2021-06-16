@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "wasmtime-mylib-py"
+version = "0.1.0"
+description = ""
+authors = ["Andrew Spittlemeister <andrew.spittlemeister@pm.me>"]
+license = "MIT"
+packages = [
+    { include = "mylib", from = "./"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+wasmtime = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

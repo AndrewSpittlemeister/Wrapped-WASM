@@ -1,0 +1,10 @@
+[package]
+name = "mylib-rs"
+version = "0.1.0"
+authors = ["Andrew Spittlemeister <andrew.spittlemeister@pm.me"]
+edition = "2018"
+
+[dependencies]
+
+[lib]
+crate-type = ["cdylib"]
